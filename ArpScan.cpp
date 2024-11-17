@@ -103,6 +103,6 @@ int main() {
     int delayThreadNum = 50; // 延迟线程数
     int pause = 0; // 暂停扫描
     int close = 0; // 停止扫描
-    ArpScan(srcIP, &delayThreadNum, &delay, &pause, &close); // 这种传递地址的形式便于无全局变量的 BOF 改造
+    ArpScan(srcIP, &delayThreadNum, &delay, &pause, &close); // 这种传递指针的形式便于无全局变量的 BOF 改造
     getchar(); // 等待线程结束
 }
